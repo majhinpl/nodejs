@@ -1,13 +1,21 @@
 const express = require("express");
 const app = express();
 
+app.set("view engine", "ejs");
+
 app.get("/", (req, res) => {
-  res.send("<h1>This is home page</h1>");
+  res.render("home.ejs");
 });
 
-app.get("/about", (req, res) => {
-  res.send("This is about page");
+app.get("/blog", (req, res) => {
+  res.render("blog.ejs");
 });
+
+app.get("/create", (req, res) => {
+  res.render("createblog.ejs");
+});
+
+
 
 app.listen(3000, () => {
   console.log("server connected at port 3000");
