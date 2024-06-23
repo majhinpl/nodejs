@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="/globle.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="auth-page">
-        <h2>Login</h2>
-        <p>
-          Don't have an account?
-          <span
-            ><a href="/user/register" class="a-link"
-              >Create a free account</a
-            ></span
-          >
-        </p>
-        <form action="/user/login" method="post" class="form">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="email"
-              name="email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              placeholder="password"
-              id="password"
-              name="password"
-              required
-            />
-          </div>
-          <input type="submit" value="Login" />
-        </form>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="/globle.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="auth-page">
+      <h2>Login</h2>
+      <p>
+        Don't have an account?
+        <span><a href="/user/register" class="a-link">Create a free account</a></span>
+      </p>
+      <form action="/user/login" method="post" class="form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" placeholder="password" id="password" name="password" required />
+        </div>
+        <input type="submit" value="Login" />
+      </form>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
